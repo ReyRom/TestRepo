@@ -20,12 +20,14 @@ body:
   - type: textarea
     id: about
     attributes:
+      label: Поле
       placeholder: Напишите что-то
     validations:
       required: true
   - type: dropdown
     id: importance
     attributes:
+      label: список
       options:
         - Критическая
         - Низкая
