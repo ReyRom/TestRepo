@@ -1,0 +1,31 @@
+name: Bug Report
+description: Отчет о дефекте
+title: "[Bug]:"
+
+labels: ["bug"]
+assignees: ["ReyRom"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо
+  - type: checkboxes
+    id: new-bug
+    attributes:
+      label: Что-то
+      description: О чем-то
+      options:
+      - label: Ткни на меня
+        required: true
+  - type: textarea
+    id: about
+    attributes:
+      placeholder: Напишите что-то
+    validations:
+      required: true
+  - type: dropdown
+    id: importance
+    attributes:
+      options:
+        - Критическая
+        - Низкая
